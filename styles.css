@@ -18,7 +18,7 @@ a{text-decoration:none;color:inherit}
 .container{width:min(var(--max),calc(100% - 40px));margin:auto}
 .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
 .nav-wrap{height:98px;display:flex;align-items:center;justify-content:space-between}
-.brand-logo{height:80px;width:auto;display:block}
+.brand-logo{height:86px;width:auto;max-width:260px;display:block;object-fit:contain}
 .nav{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600;color:#0c1f36}
 .nav a{position:relative}
 .nav a:hover,.nav a.active{color:var(--red)}
@@ -97,7 +97,7 @@ footer{background:#f7f8fa;padding:50px 0 24px;color:#687688}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:50px}
 .footer-grid>div{display:flex;flex-direction:column;gap:8px}
 .footer-grid strong{color:var(--navy)}
-.footer-logo{width:210px;height:auto;display:block;margin-bottom:8px}
+.footer-logo{width:230px;height:auto;display:block;margin-bottom:8px;object-fit:contain}
 .copyright{border-top:1px solid var(--line);margin-top:34px;padding-top:20px;font-size:12px}
 @media(max-width:980px){
   .nav{display:none;position:absolute;top:98px;left:0;right:0;background:#fff;padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}
@@ -113,7 +113,7 @@ footer{background:#f7f8fa;padding:50px 0 24px;color:#687688}
 @media(max-width:650px){
   .container{width:min(var(--max),calc(100% - 28px))}
   .nav-wrap{height:84px}
-  .brand-logo{height:67px}
+  .brand-logo{height:72px;max-width:220px}
   .nav{top:84px}
   .hero{padding-top:58px}
   .hero-services,.cards,.industry-grid,.field-row,.footer-grid{grid-template-columns:1fr}
